@@ -1,20 +1,12 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
-import { createStackNavigator } from "react-navigation";
-
-import LoginScreen from "./screens/LoginScreen";
+import Todo from "./src/Todo";
 
 export default class App extends React.Component {
   render() {
-    return <AppStackNavigator />;
+    return <Todo />;
   }
 }
-
-const AppStackNavigator = createStackNavigator({
-  Login: {
-    screen: LoginScreen
-  }
-});
 
 const styles = StyleSheet.create({
   container: {
